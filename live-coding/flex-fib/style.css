@@ -1,0 +1,56 @@
+body, html {
+  height: 100vh;
+  padding: 5em;
+}
+
+.container {
+  display: flex;
+  background-color: rgb(200, 20, 0);
+}
+
+.container > div::after {
+  content: attr(data-content); /* Använder attr värdet på data-content i html:en*/
+}
+
+.container > div {
+  border: 1px solid #fff;
+  line-height: 4em;
+  /* flex-grow: var(--grow); advanced solution */
+}
+
+.container > div:nth-child(1) {
+  flex-grow: 0;
+}
+
+.container > div:nth-child(2),
+.container > div:nth-child(3) {
+  flex-grow: 1;
+}
+
+.container > div:nth-child(4) {
+  flex-grow: 2;
+}
+
+.container > div:nth-child(5) {
+  flex-grow: 3;
+}
+
+.container > div:nth-child(6) {
+  flex-grow: 5;
+}
+
+.container > div:nth-child(7) {
+  flex-grow: 8;
+}
+
+.container > div:nth-child(8) {
+  flex-grow: 13;
+}
+
+.container > div:nth-child(9) {
+  flex-grow: 21;
+}
+
+.container > div:nth-child(10) {
+  flex-grow: 34;
+}

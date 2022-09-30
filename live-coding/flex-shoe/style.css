@@ -1,0 +1,94 @@
+html, body {
+  height: 100vh;
+  width: 100%;
+  background-color: #d6d6d6;
+  color: #2d2d2d;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  font-size: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.column:nth-child(1) {
+  background-color: rgb(255, 191, 0);
+}
+
+.column:nth-child(2) {
+  background-color: #fff;
+}
+
+.shoe-price::after {
+  content: 'sek';
+}
+
+.shoe-price {
+  font-size: 1.1em;
+  letter-spacing: .1em;
+}
+
+.shoe-price,
+.shoe-submit {
+  align-self: flex-end;
+}
+
+.shoe-header {
+  margin-bottom: 1em;
+}
+
+.shoe-name {
+  letter-spacing: .05em;
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.shoe-edition {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.shoe-description {
+  font-size: 0.7rem;
+  line-height: 1.5em;
+  font-weight: 200;
+}
+
+.shoe-submit {
+  background-color: white;
+  border: 2px solid #2d2d2d;
+  padding: 1em 1.5em;
+  margin-top: 4em;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .container {
+    margin: 5% auto;
+    width: 80%;
+  }
+
+  .flex-wrapper {
+    display: flex;
+    margin-bottom: 1em;
+  }
+
+  .shoe-image {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 976px) {
+  .container > .flex-wrapper {
+    margin-right: 1em;
+  }
+}
+
+
+
+
